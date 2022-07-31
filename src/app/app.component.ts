@@ -10,7 +10,7 @@ export class AppComponent {
   @Output() 
   lessonChange: EventEmitter<EduGet> = new EventEmitter();
   title = 'Themes';
-  // public themes: string[];
+  public themes = this.eduGet();
   
   constructor(public http: HttpClient){
     var a: string[];
@@ -19,14 +19,9 @@ export class AppComponent {
 
   eduGet()
   {
-    let huyta = this.http.get<EduGet>("https://algorithmic.uz/api/Education");
-    huyta.subscribe(result => {
-      //this code is not executed, I do not understand why                
-      this.lessonChange.emit(result);
-      console.log(result.data)
-      return result.data;
-    });
-    return huyta;
+    return this.http.get<EduGet>("https://algorithmic.uz/api/Education");
+    
+    
   }
 
 }

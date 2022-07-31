@@ -1,5 +1,5 @@
 .content{
-    width: 85vw;
+    width: 80%;
     height: auto;
     /* background-color: aqua; */
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 .sidebar{
-    width: 15vw;
+    width: 20%;
     height: auto;
     /* background-color: orange;  */
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Route, Router } from '@angular/router';
 
 
@@ -10,12 +11,16 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
 })
 export class ThemeComponent implements OnInit {
   theme: any;
-  public ss = ["sdd", "sdsd"]
+
+
   constructor(private router: ActivatedRoute) {
+    
     this.theme = this.router.snapshot.params['name'];
    }
   
   ngOnInit(): void {
   }
+
+
 
 }
