@@ -1,32 +1,40 @@
-:host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
+.content{
+    width: 85vw;
+    height: auto;
+    /* background-color: aqua; */
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+    border-right: 3px solid rgb(153, 153, 153);
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
+.sidebar{
+    width: 15vw;
+    height: auto;
+    /* background-color: orange;  */
+}
 
-  p {
-    margin: 0;
-  }
+.xuyta{
+    display: flex;
+}
 
-  .content {
+
+.sidebar_nav{
+    list-style-type: none; 
+    margin: 30px;
+}
+
+.sidebar_nav a{
+    text-decoration: none; 
+    font-family: monospace;
+}
+
+.card-content {
     display: flex;
     margin: 82px auto 32px;
-    padding: 0 16px;
+    padding: 0 0px;
     max-width: 960px;
     flex-direction: column;
     align-items: center;
+    justify-content: top;
   }
 
   svg.material-icons {
@@ -100,59 +108,4 @@
 
   .card.card.highlight-card span {
     margin-left: 60px;
-  }
-
-  svg#rocket {
-    width: 80px;
-    position: absolute;
-    left: -10px;
-    top: -24px;
-  }
-
-  svg#rocket-smoke {
-    height: calc(100vh - 95px);
-    position: absolute;
-    top: 10px;
-    right: 180px;
-    z-index: -10;
-  }
-
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #125699;
-  }
-
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
   }
