@@ -1,1 +1,34 @@
-<p>solve-problem works!</p>
+<div class="content">
+  <div class="problem_title">{{problem .title}}</div>
+  <div class="time_restriction">Time: {{problem.time}} ms</div>
+  <div class="memory_restriction">Memory: {{problem.memory}} KB</div>
+
+  <div class="problem_explanation">
+      {{problem.question}}
+  </div>
+
+  <h3>Input</h3>
+  <div class="inputting_explanation">
+    {{problem.inputData}}
+  </div>
+
+  <h3>Output</h3>
+  <div class="outputting_explanation">
+      {{problem.outputData}}
+  </div>
+
+  <h3>Samples</h3>
+  <div class="sample_title">Input</div>
+  <div class="sample_in">
+        <pre><span *ngFor="let data in problem.examples">{{data.inPut}}</span></pre>
+  </div>
+  <div class="sample_title">Output</div>
+  <div class="sample_out"><pre></pre><pre><span *ngFor="let data in problem.examples">{{data.outPut}}</span></pre></div>
+  <textarea></textarea>
+  <div class="card-container">
+      <a class="card" rel="noopener" >
+
+        <span>Submit</span>
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+  </div>
+</div>

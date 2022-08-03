@@ -1,3 +1,4 @@
+
 .content{
     width: 80%;
     height: auto;
@@ -18,12 +19,12 @@
 
 
 .sidebar_nav{
-    list-style-type: none; 
+    list-style-type: none;
     margin: 30px;
 }
 
 .sidebar_nav a{
-    text-decoration: none; 
+    text-decoration: none;
     font-family: monospace;
 }
 
